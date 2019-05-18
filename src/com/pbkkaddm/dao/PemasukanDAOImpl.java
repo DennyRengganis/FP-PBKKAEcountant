@@ -9,35 +9,38 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.pbkkaddm.entity.Karyawan;
+import com.pbkkaddm.entity.Pemasukan;
 
 @Repository
-public class KaryawanDAOImpl implements KaryawanDAO {
+public class PemasukanDAOImpl implements PemasukanDAO {
+
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-
+	@Transactional
 	@Override
-	public List<Karyawan> getKaryawans() {
+	public List<Pemasukan> getPemasukans() {
 		
 		// Get Session
 		Session currentSession = sessionFactory.getCurrentSession();
 		
 		// Query
-		List<Karyawan> karyawans = currentSession.createQuery("from Karyawan")
+		List<Pemasukan> pemasukans = currentSession.createQuery("from Pemasukan")
 									.getResultList();
 		
-		return karyawans;
+		return pemasukans;
 	}
+
 	@Override
-	public Karyawan getKaryawan(int karyawanId) {
+	public Pemasukan getPemasukan(int pemasukanId) {
 		
 		// Get Session
 		Session currentSession = sessionFactory.getCurrentSession();
 		
 		// Query
-		Karyawan karyawan = currentSession.get(Karyawan.class, karyawanId);
+		Pemasukan pemasukan = currentSession.get(Pemasukan.class, pemasukanId);
 		
-		return karyawan;
+		return pemasukan;
 	}
+	
 }
