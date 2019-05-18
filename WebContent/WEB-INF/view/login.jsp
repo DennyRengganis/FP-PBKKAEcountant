@@ -37,7 +37,7 @@
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="/register">
+              <a class="nav-link nav-link-icon" href="register">
                 <i class="ni ni-circle-08"></i> 
                 <span class="nav-link-inner--text">Register</span>
               </a>
