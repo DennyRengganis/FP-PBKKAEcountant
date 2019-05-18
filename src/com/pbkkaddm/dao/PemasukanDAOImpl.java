@@ -17,7 +17,7 @@ public class PemasukanDAOImpl implements PemasukanDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	@Transactional
+
 	@Override
 	public List<Pemasukan> getPemasukans() {
 		

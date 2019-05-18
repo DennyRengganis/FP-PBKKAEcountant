@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.pbkkaddm.dao.PemasukanDAO;
 import com.pbkkaddm.entity.Pemasukan;
+import com.pbkkaddm.service.PemasukanService;
 
 
 
@@ -17,13 +19,13 @@ import com.pbkkaddm.entity.Pemasukan;
 public class PemasukanController {
 	
 	@Autowired
-	private PemasukanDAO pemasukanDAO;
+	private PemasukanService pemasukanService;
 	
-	@RequestMapping("list")
+	@GetMapping("list")
 	public String list(Model model) {
 		
 		// Query using DAO
-		List<Pemasukan> pemasukans = pemasukanDAO.getPemasukans();
+		List<Pemasukan> pemasukans = pemasukanService.getPemasukans();
 		
 		// Add to model
 		model.addAttribute("pemasukans", pemasukans);
