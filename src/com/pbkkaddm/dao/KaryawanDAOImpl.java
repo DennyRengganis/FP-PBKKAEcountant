@@ -16,7 +16,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	@Transactional
+
 	@Override
 	public List<Karyawan> getKaryawans() {
 		
