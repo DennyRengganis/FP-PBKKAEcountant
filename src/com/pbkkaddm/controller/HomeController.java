@@ -8,7 +8,12 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String index() {
-		return "index";
+		return "login";
 	}
+	
+//	@RequestMapping("/Login")
+//	public String login() {
+//		return "login";
+//	}
 
 }
