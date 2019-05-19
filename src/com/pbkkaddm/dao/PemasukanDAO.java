@@ -21,5 +21,7 @@ public interface PemasukanDAO {
 
 	public void saveNota(Nota nota);
 	public void saveUser(User user);
+
+	public void updateNota(Nota nota);
 	
 }

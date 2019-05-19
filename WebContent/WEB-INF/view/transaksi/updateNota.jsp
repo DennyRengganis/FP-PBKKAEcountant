@@ -176,7 +176,8 @@
 					    	<div class="tab-content" id="myTabContent">
 					        	<div class="tab-pane fade show active" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
 					           		
-					           		<form:form action="saveNota" modelAttribute="nota" method="POST">
+					           		<form:form action="updateNota" modelAttribute="nota" method="POST">
+					           		<form:hidden path="nid"/>
 										<div class="form-group">
 											<div class="input-group input-group-alternative mb-3">
 												<div class="input-group-prepend">

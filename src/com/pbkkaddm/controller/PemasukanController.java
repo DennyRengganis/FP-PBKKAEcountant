@@ -148,4 +148,23 @@ public class PemasukanController {
 		
 		return "redirect:list";
 	}
+	
+	@GetMapping("/showFormForUpdateNota")
+	public String showFormForUpdateNota(@RequestParam("notaId") int theId,
+									Model theModel) {
+		Nota nota = pemasukanService.getNota(theId);
+		
+		theModel.addAttribute("nota",nota);
+		return "transaksi/updateNota";
+	}
+	
+	@PostMapping("/updateNota")
+	public String updateNota(@ModelAttribute("nota") Nota nota) {
+		
+		// save the customer using our service
+		pemasukanService.updateNota(nota);
+		
+		
+		return "redirect:list";
+	}
 }

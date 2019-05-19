@@ -17,5 +17,8 @@ public interface PemasukanService {
 	public Pemasukan getPemasukan(int pemasukanId);
 
 	public void saveUser(User user);
+	public Nota getNota(int notaId);
+
+	public void updateNota(Nota nota);
 	
 }
