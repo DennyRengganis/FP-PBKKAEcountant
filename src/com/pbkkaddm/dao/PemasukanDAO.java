@@ -14,4 +14,6 @@ public interface PemasukanDAO {
 	public List<Nota> getNotas();
 	
 	public Nota getNota(int notaID);
+
+	public void savePemasukan(Pemasukan pemasukan);
 }

@@ -65,4 +65,15 @@ public class PemasukanDAOImpl implements PemasukanDAO {
 		return nota;
 	}
 	
+	@Override
+	public void savePemasukan(Pemasukan pemasukan) {
+
+		// get current hibernate session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// save the customer ... finally LOL
+		currentSession.save(pemasukan);
+		
+	}
+	
 }

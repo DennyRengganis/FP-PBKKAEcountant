@@ -9,5 +9,6 @@ public interface PemasukanService {
 	public List<Pemasukan> getPemasukans();
 	
 	public List<Nota> getNotas();
+	public void savePemasukan(Pemasukan pemasukan);
 	
 }

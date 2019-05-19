@@ -40,7 +40,7 @@ public class Nota {
 		this.setNkeperluan(Nkeperluan);
 		this.setNcatatan(Ncatatan);
 		this.setNnama(Nnama);
-		this.setNharga(nharga);
+		this.setNharga(Nharga);
 	}
 
 	public int getNid() {

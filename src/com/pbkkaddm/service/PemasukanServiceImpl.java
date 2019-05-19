@@ -27,5 +27,13 @@ public class PemasukanServiceImpl implements PemasukanService {
 	public List<Nota> getNotas() {
 		return pemasukanDAO.getNotas();
 	}
+	
+	@Override
+	@Transactional
+	public void savePemasukan(Pemasukan pemasukan) {
+
+		pemasukanDAO.savePemasukan(pemasukan);
+	}
+
 
 }
