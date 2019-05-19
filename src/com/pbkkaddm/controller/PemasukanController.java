@@ -59,17 +59,28 @@ public class PemasukanController {
 		pemasukanService.savePemasukan(pemasukan);
 		
 		
-		return "redirect:list";
+		return "redirect:showFormForAdd";
 	}
+	
 	@GetMapping("/pembukuan")
 	public String jumlahSemua(Model model) {
 		List<Pemasukan> pemasukans = pemasukanService.getPemasukans();
+		List<Nota> notas = pemasukanService.getNotas();
 		int jumlah=0;
+		int jumlah2=0;
+		int jumlah3;
 		for(Pemasukan i: pemasukans) {
 			int tmp=i.getTotal();
 			jumlah+=tmp;
 		}
+		for(Nota j: notas) {
+			int tmp2=j.getNharga();
+			jumlah2+=tmp2;
+		}
+		jumlah3=jumlah - jumlah2;
 		model.addAttribute("jumlah",jumlah);
+		model.addAttribute("jumlah2",jumlah2);
+		model.addAttribute("jumlah3",jumlah3);
 		return "transaksi/pembukuan";
 	}
 

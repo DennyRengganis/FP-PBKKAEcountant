@@ -8,6 +8,11 @@
 </head>
 <body>
 <h1>Summation</h1>
-	${jumlah}
+	Pemasukan : ${jumlah}
+	<br>
+	Pengeluaran : ${jumlah2}
+	<br>
+	Keuntungan : ${jumlah3}
+	
 </body>
 </html>
