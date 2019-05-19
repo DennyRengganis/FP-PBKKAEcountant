@@ -221,22 +221,14 @@
 					                
 								</div>
 					            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-					                
-					                <form:form action="saveNota" modelAttribute="nota" method="POST">
+					               	<%-- <form:form action="savePengeluaran" modelAttribute="pengeluarn" method="POST"> --%>
+					               	<form role="form">
 										<div class="form-group">
 											<div class="input-group input-group-alternative mb-3">
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Tanggal pengeluaran" path="tanggal" />
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-												</div>
-						                    	<form:input class="form-control" placeholder="Keperluan pengeluaran" path="keperluan" />
+						                    	
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -244,15 +236,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Total pengeluaran" path="total" />
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	<form:input class="form-control" placeholder="Nama pengeluaran" path="nama" />
+						                    	
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -260,15 +244,33 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input class="form-control" placeholder="Keterangan pengeluaran" path="catatan" />
+						                    
+						                  	</div>
+						               	</div>
+						                <div class="form-group">
+						                	<div class="input-group input-group-alternative">
+						                    	<div class="input-group-prepend">
+						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+						                    	</div>
+						                    
+						                  	</div>
+						                </div>
+						                <div class="form-group">
+						                  	<div class="input-group input-group-alternative">
+						                    	<div class="input-group-prepend">
+						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+						                    	</div>
+						                    	
 						                  	</div>
 						               	</div>
 						               
 						                <div class="text-center">
-						                  	<button type="submit" class="btn btn-primary mt-4" value="Save">Submit</button>
+						                  	<!-- <button type="button" class="btn btn-primary mt-4" href="">Submit</button> -->
+						                  	<td><label></label></td>
+											<td><input type="submit" value="Save" class="save" /></td>
 						                </div>
-						          </form:form>
-					                
+						          </form>
+					              <%-- </form:form> --%>
 					            </div> 
 					        </div>
 					    </div>
