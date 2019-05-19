@@ -47,7 +47,7 @@ public class PemasukanServiceImpl implements PemasukanService {
 	@Transactional
 	public void saveUser(User user) {
 
-		pemasukanDAO.saveNota(nota);
+		pemasukanDAO.saveUser(user);
 	}
 
 	@Override

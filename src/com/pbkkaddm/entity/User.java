@@ -22,7 +22,7 @@ public class User {
 	@Column(name="password")
 	private String password;
 	
-	@Column(name="name")
+	@Column(name="email")
 	private String email;
 	
 	public User() {
@@ -32,7 +32,7 @@ public class User {
 	public User(String username,String password,String email) {
 		this.setUsername(username);
 		this.setPassword(password);
-		this.setPassword(password);
+		this.setEmail(email);
 	}
 
 	public String getUsername() {

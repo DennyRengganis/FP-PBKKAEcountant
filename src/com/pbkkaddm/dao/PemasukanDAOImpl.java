@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
+import com.pbkkaddm.entity.User;
 
 @Repository
 public class PemasukanDAOImpl implements PemasukanDAO {
@@ -84,6 +85,17 @@ public class PemasukanDAOImpl implements PemasukanDAO {
 		
 		// save the customer ... finally LOL
 		currentSession.save(nota);
+		
+	}
+	
+	@Override
+	public void saveUser(User user) {
+
+		// get current hibernate session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// save the customer ... finally LOL
+		currentSession.save(user);
 		
 	}
 	

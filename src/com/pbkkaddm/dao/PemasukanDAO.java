@@ -3,7 +3,8 @@ package com.pbkkaddm.dao;
 import java.util.List;
 
 import com.pbkkaddm.entity.Nota;
-import com.pbkkaddm.entity.Pemasukan;;
+import com.pbkkaddm.entity.Pemasukan;
+import com.pbkkaddm.entity.User;;
 
 public interface PemasukanDAO {
 	
@@ -19,4 +20,6 @@ public interface PemasukanDAO {
 	public void updatePemasukan(Pemasukan pemasukan);
 
 	public void saveNota(Nota nota);
+	public void saveUser(User user);
+	
 }
