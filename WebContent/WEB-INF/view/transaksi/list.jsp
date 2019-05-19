@@ -8,11 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>List Pemasukan</h1>
+<h1>Historis Transaksi</h1>
 
 	<c:forEach var="pemasukan" items="${pemasukans}">
 		${pemasukan} <br/>
 	</c:forEach>
-
+	
+	<c:forEach var="nota" items="${notas}">
+		${nota} <br/>
+	</c:forEach>
+	
 </body>
 </html>

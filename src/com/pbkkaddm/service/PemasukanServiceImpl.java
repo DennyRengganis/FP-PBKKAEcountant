@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.pbkkaddm.dao.PemasukanDAO;
+import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
 
 @Service
@@ -18,8 +19,13 @@ public class PemasukanServiceImpl implements PemasukanService {
 	@Override
 	@Transactional
 	public List<Pemasukan> getPemasukans() {
-		// TODO Auto-generated method stub
 		return pemasukanDAO.getPemasukans();
+	}
+
+	@Override
+	@Transactional
+	public List<Nota> getNotas() {
+		return pemasukanDAO.getNotas();
 	}
 
 }

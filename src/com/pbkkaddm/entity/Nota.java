@@ -90,5 +90,11 @@ public class Nota {
 	public void setNharga(int nharga) {
 		this.nharga = nharga;
 	}
+
+	@Override
+	public String toString() {
+		return "Nota [nid=" + nid + ", ntanggal=" + ntanggal + ", nkeperluan=" + nkeperluan + ", ncatatan=" + ncatatan
+				+ ", nnama=" + nnama + ", nharga=" + nharga + "]";
+	}
 	
 }
