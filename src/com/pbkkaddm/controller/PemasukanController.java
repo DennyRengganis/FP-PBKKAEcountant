@@ -61,7 +61,7 @@ public class PemasukanController {
 		
 		theModel.addAttribute("nota", nota);
 		
-		return "transaksi/customer-form";
+		return "transaksi/nota";
 	}
 	@PostMapping("/savePemasukan")
 	public String savePemasukan(@ModelAttribute("pemasukan") Pemasukan pemasukan) {
