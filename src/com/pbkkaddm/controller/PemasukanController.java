@@ -61,6 +61,16 @@ public class PemasukanController {
 		
 		return "redirect:list";
 	}
-	
+	@GetMapping("/pembukuan")
+	public String jumlahSemua(Model model) {
+		List<Pemasukan> pemasukans = pemasukanService.getPemasukans();
+		int jumlah=0;
+		for(Pemasukan i: pemasukans) {
+			int tmp=i.getTotal();
+			jumlah+=tmp;
+		}
+		model.addAttribute("jumlah",jumlah);
+		return "transaksi/pembukuan";
+	}
 
 }
