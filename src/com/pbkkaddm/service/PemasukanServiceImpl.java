@@ -42,5 +42,12 @@ public class PemasukanServiceImpl implements PemasukanService {
 		pemasukanDAO.saveNota(nota);
 	}
 
+	@Override
+	@Transactional
+	public Pemasukan getPemasukan(int pemasukanId) {
+		// TODO Auto-generated method stub
+		return pemasukanDAO.getPemasukan(pemasukanId);
+	}
+ 
 
 }

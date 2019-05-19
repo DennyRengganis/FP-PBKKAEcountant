@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
@@ -105,6 +106,15 @@ public class PemasukanController {
 		model.addAttribute("jumlah2",jumlah2);
 		model.addAttribute("jumlah3",jumlah3);
 		return "transaksi/pembukuan";
+	}
+	
+	@GetMapping("/showFormForUpdate")
+	public String showFormForUpdate(@RequestParam("pemasukanId") int theId,
+									Model theModel) {
+		Pemasukan pemasukan = pemasukanService.getPemasukan(theId);
+		
+		theModel.addAttribute("pemasukan",pemasukan);
+		return "transaksi/customer-form";
 	}
 
 }

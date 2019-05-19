@@ -9,15 +9,16 @@
 </head>
 <body>
 <h1>Historis Transaksi</h1>
-
 	<c:forEach var="pemasukan" items="${pemasukans}">
-		${pemasukan} <br/>
+		<c:url var="updateLink" value="/transaksi/showFormForUpdate">
+			<c:param name="pemasukanId" value="${pemasukan.id }" />
+		</c:url>
+			
+		<div>${pemasukan} <a href="${updateLink }">Update</a></div> <br/>
 	</c:forEach>
 	
 	<c:forEach var="nota" items="${notas}">
 		${nota} <br/>
 	</c:forEach>
-	
-	
 </body>
 </html>
