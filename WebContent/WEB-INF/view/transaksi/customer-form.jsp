@@ -13,9 +13,7 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 	<!-- CSS -->
 	<link rel="stylesheet"  type="text/css" href="${pageContext.request.contextPath}/resources/css/argon.css?v=1.0.1">
-  	<link type="text/css"
-		  rel="stylesheet"
-		  href="${pageContext.request.contextPath}/resources/css/add-customer-style.css">
+  	
 </head>
 
 <body>
@@ -180,7 +178,7 @@
 						<div class="card-body">
 					    	<div class="tab-content" id="myTabContent">
 					        	<div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-					           		<form role="form">
+					           		
 					           		<form:form action="savePemasukan" modelAttribute="pemasukan" method="POST">
 										<div class="form-group">
 											<div class="input-group input-group-alternative mb-3">
@@ -219,7 +217,7 @@
 						                  	<button type="submit" class="btn btn-primary mt-4" value="Save">Submit</button>
 						                </div>
 						          </form:form>
-					              </form>
+					           
 					                
 								</div>
 					            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
@@ -266,7 +264,9 @@
 						               	</div>
 						               
 						                <div class="text-center">
-						                  	<button type="button" class="btn btn-primary mt-4" href="">Submit</button>
+						                  	<!-- <button type="button" class="btn btn-primary mt-4" href="">Submit</button> -->
+						                  	<td><label></label></td>
+						<td><input type="submit" value="Save" class="save" /></td>
 						                </div>
 					              </form>
 					            </div> 
