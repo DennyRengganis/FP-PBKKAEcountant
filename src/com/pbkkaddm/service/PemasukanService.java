@@ -10,5 +10,7 @@ public interface PemasukanService {
 	
 	public List<Nota> getNotas();
 	public void savePemasukan(Pemasukan pemasukan);
+
+	public void saveNota(Nota nota);
 	
 }
