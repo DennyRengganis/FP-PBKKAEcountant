@@ -57,5 +57,10 @@ public class PemasukanServiceImpl implements PemasukanService {
 		return pemasukanDAO.getPemasukan(pemasukanId);
 	}
  
+	@Override
+	@Transactional
+	public void updatePemasukan(Pemasukan pemasukan) {
 
+		pemasukanDAO.updatePemasukan(pemasukan);
+	}
 }

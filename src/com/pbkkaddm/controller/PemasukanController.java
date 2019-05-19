@@ -136,7 +136,16 @@ public class PemasukanController {
 		Pemasukan pemasukan = pemasukanService.getPemasukan(theId);
 		
 		theModel.addAttribute("pemasukan",pemasukan);
-		return "transaksi/customer-form";
+		return "transaksi/updatePemasukan";
 	}
-
+	
+	@PostMapping("/updatePemasukan")
+	public String updatePemasukan(@ModelAttribute("pemasukan") Pemasukan pemasukan) {
+		
+		// save the customer using our service
+		pemasukanService.updatePemasukan(pemasukan);
+		
+		
+		return "redirect:list";
+	}
 }
