@@ -6,8 +6,10 @@ import javax.transaction.Transactional;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
 
 import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
@@ -119,5 +121,21 @@ public class PemasukanDAOImpl implements PemasukanDAO {
 		// save the customer ... finally LOL
 		currentSession.update(nota);
 		
+	}
+	@Override
+	public void deletePemasukan(int theId) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		Query theQuery = currentSession.createQuery("delete from Pemasukan where id=:pemasukanId");
+		theQuery.setParameter("pemasukanId",theId);
+		theQuery.executeUpdate();
+	}
+	@Override
+	public void deleteNota(int theId) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		Query theQuery = currentSession.createQuery("delete from Nota where id=:notaId");
+		theQuery.setParameter("notaId",theId);
+		theQuery.executeUpdate();
 	}
 }

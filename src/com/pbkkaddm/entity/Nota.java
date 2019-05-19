@@ -93,7 +93,7 @@ public class Nota {
 
 	@Override
 	public String toString() {
-		return "Nota [nid=" + nid + ", ntanggal=" + ntanggal + ", nkeperluan=" + nkeperluan + ", ncatatan=" + ncatatan
+		return "Pengeluaran [nid=" + nid + ", ntanggal=" + ntanggal + ", nkeperluan=" + nkeperluan + ", ncatatan=" + ncatatan
 				+ ", nnama=" + nnama + ", nharga=" + nharga + "]";
 	}
 	

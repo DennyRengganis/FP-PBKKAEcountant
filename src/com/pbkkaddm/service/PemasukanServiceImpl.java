@@ -76,5 +76,17 @@ public class PemasukanServiceImpl implements PemasukanService {
 
 		pemasukanDAO.updateNota(nota);
 	}
+
+	@Override
+	@Transactional
+	public void deletePemasukan(int theId) {
+		pemasukanDAO.deletePemasukan(theId);
+	}
+
+	@Override
+	public void deleteNota(int theId) {
+		// TODO Auto-generated method stub
+		pemasukanDAO.deleteNota(theId);
+	}
 	
 }

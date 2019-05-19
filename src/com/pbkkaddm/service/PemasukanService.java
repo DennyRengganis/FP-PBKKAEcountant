@@ -20,5 +20,9 @@ public interface PemasukanService {
 	public Nota getNota(int notaId);
 
 	public void updateNota(Nota nota);
+
+	public void deletePemasukan(int theId);
+
+	public void deleteNota(int theId);
 	
 }

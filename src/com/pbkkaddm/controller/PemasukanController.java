@@ -127,6 +127,8 @@ public class PemasukanController {
 		model.addAttribute("jumlah",jumlah);
 		model.addAttribute("jumlah2",jumlah2);
 		model.addAttribute("jumlah3",jumlah3);
+		model.addAttribute("pemasukans", pemasukans);
+		model.addAttribute("notas", notas);
 		return "transaksi/pembukuan";
 	}
 	
@@ -165,6 +167,16 @@ public class PemasukanController {
 		pemasukanService.updateNota(nota);
 		
 		
+		return "redirect:list";
+	}
+	@GetMapping("/deletePemasukan")
+	public String deletePemasukan(@RequestParam("pemasukanId") int theId) {
+		pemasukanService.deletePemasukan(theId);
+		return "redirect:list";
+	}
+	@GetMapping("/deleteNota")
+	public String deleteNota(@RequestParam("notaId") int theId) {
+		pemasukanService.deleteNota(theId);
 		return "redirect:list";
 	}
 }
