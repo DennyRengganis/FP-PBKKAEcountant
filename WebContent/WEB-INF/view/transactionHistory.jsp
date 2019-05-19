@@ -1,19 +1,22 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
  
-	<!-- Icons -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/nucleo/css/nucleo.css">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-	<!-- CSS -->
-	<link rel="stylesheet"  type="text/css" href="${pageContext.request.contextPath}/resources/css/argon.css?v=1.0.1">
-  	
+  <!-- Icons -->
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/nucleo/css/nucleo.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- CSS -->
+   <link rel="stylesheet"  type="text/css" href="${pageContext.request.contextPath}/resources/css/argon.css?v=1.0.1">
+ 
+  
 </head>
 
 <body>
@@ -178,14 +181,13 @@
 						<div class="card-body">
 					    	<div class="tab-content" id="myTabContent">
 					        	<div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-					           		
-					           		<form:form action="savePemasukan" modelAttribute="pemasukan" method="POST">
+					           		<form role="form">
 										<div class="form-group">
 											<div class="input-group input-group-alternative mb-3">
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Tanggal pemasukan" path="tanggal" />
+						                    	<input class="form-control" placeholder="Sumber Pemasukan" type="text">
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -193,7 +195,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Total pengeluaran" path="total" />
+						                    	<input class="form-control" placeholder="Tanggal" type="text">
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -201,7 +203,7 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input class="form-control" placeholder="Sumber Pemasukan" path="dari" />
+						                    	<input class="form-control" placeholder="Total Pemasukan" type="number">
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -209,26 +211,24 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input class="form-control" placeholder="Keterangan Pemasukan" path="catatan" />
+						                    	<input class="form-control" placeholder="Catatan Tambahan" type="text">
 						                  	</div>
 						               	</div>
 						               
 						                <div class="text-center">
-						                  	<button type="submit" class="btn btn-primary mt-4" value="Save">Submit</button>
+						                  	<button type="button" class="btn btn-primary mt-4" href="">Submit</button>
 						                </div>
-						          </form:form>
-					           
+					              </form>
 					                
 								</div>
 					            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-					               	<%-- <form:form action="savePengeluaran" modelAttribute="pengeluarn" method="POST"> --%>
-					               	<form role="form">
+					                <form role="form">
 										<div class="form-group">
 											<div class="input-group input-group-alternative mb-3">
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
 												</div>
-						                    	
+						                    	<input class="form-control" placeholder="Keperluan pengeluaran" type="text">
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -236,7 +236,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 												</div>
-						                    	
+						                    	<input class="form-control" placeholder="Tanggal" type="text">
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -244,7 +244,7 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    
+						                    	<input class="form-control" placeholder="Nama Barang" type="text">
 						                  	</div>
 						               	</div>
 						                <div class="form-group">
@@ -252,7 +252,7 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    
+						                    	<input class="form-control" placeholder="Total Pengeluaran" type="number">
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -260,17 +260,14 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	
+						                    	<input class="form-control" placeholder="Catatan Tambahan" type="text">
 						                  	</div>
 						               	</div>
 						               
 						                <div class="text-center">
-						                  	<!-- <button type="button" class="btn btn-primary mt-4" href="">Submit</button> -->
-						                  	<td><label></label></td>
-											<td><input type="submit" value="Save" class="save" /></td>
+						                  	<button type="button" class="btn btn-primary mt-4" href="">Submit</button>
 						                </div>
-						          </form>
-					              <%-- </form:form> --%>
+					              </form>
 					            </div> 
 					        </div>
 					    </div>
@@ -309,14 +306,6 @@
 				 	</div>
 			    </div>
 			</footer>
-			
-			
-
-
-
-			
-			
-			
 		</div>
 	</div>
   
@@ -332,18 +321,6 @@
 	<script src="${pageContext.request.contextPath}/resources/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Optional JS -->
 	<script src="${pageContext.request.contextPath}/resources/js/argon.js?v=1.0.1"></script>
-</body>	
-
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
