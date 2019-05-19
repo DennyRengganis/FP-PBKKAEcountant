@@ -187,7 +187,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
 												</div>
-						                    	<form:input path="tanggal" />
+						                    	<form:input class="form-control" placeholder="Tanggal pemasukan" path="tanggal" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -195,7 +195,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 												</div>
-						                    	<form:input path="total" />
+						                    	<form:input class="form-control" placeholder="Total pengeluaran" path="total" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -203,7 +203,7 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input path="dari" />
+						                    	<form:input class="form-control" placeholder="Sumber Pemasukan" path="dari" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -211,12 +211,12 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input path="catatan" />
+						                    	<form:input class="form-control" placeholder="Keterangan Pemasukan" path="catatan" />
 						                  	</div>
 						               	</div>
 						               
 						                <div class="text-center">
-						                  	<button type="button" class="btn btn-primary mt-4" value="Save">Submit</button>
+						                  	<button type="submit" class="btn btn-primary mt-4" value="Save">Submit</button>
 						                </div>
 						          </form:form>
 					              </form>
