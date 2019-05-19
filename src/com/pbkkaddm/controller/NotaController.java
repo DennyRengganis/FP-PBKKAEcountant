@@ -8,29 +8,26 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.pbkkaddm.dao.PemasukanDAO;
-import com.pbkkaddm.entity.Pemasukan;
-import com.pbkkaddm.service.PemasukanService;
-
-
+import com.pbkkaddm.entity.Nota;
+import com.pbkkaddm.service.NotaService;
 
 @Controller
 @RequestMapping("/transaksi")
-public class PemasukanController {
+public class NotaController {
 	
 	@Autowired
-	private PemasukanService pemasukanService;
+	private NotaService notaService;
 	
 	@GetMapping("list")
 	public String list(Model model) {
 		
 		// Query using DAO
-		List<Pemasukan> pemasukans = pemasukanService.getPemasukans();
+		List<Nota> notas = notaService.getNotas();
 		
 		// Add to model
-		model.addAttribute("pemasukans", pemasukans);
+		model.addAttribute("notas", notas);
 		
-		return "transaksi/list";
+		return null;
 	}
-
+	
 }
