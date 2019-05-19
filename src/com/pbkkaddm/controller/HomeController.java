@@ -21,6 +21,11 @@ public class HomeController {
 	public String addTransaction() {
 		return "transaksi/customer-form";
 	}
+	
+	@RequestMapping("/transactionHistory")
+	public String transactionHistory() {
+		return "transactionHistory";
+	}
 
 	
 }
