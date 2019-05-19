@@ -59,7 +59,7 @@ public class PemasukanController {
 		pemasukanService.savePemasukan(pemasukan);
 		
 		
-		return "transaksi/list";
+		return "redirect:list";
 	}
 	
 
