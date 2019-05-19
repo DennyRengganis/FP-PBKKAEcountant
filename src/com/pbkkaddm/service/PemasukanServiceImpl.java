@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.pbkkaddm.dao.PemasukanDAO;
 import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
+import com.pbkkaddm.entity.User;
 
 @Service
 public class PemasukanServiceImpl implements PemasukanService {
@@ -38,6 +39,13 @@ public class PemasukanServiceImpl implements PemasukanService {
 	@Override
 	@Transactional
 	public void saveNota(Nota nota) {
+
+		pemasukanDAO.saveNota(nota);
+	}
+	
+	@Override
+	@Transactional
+	public void saveUser(User user) {
 
 		pemasukanDAO.saveNota(nota);
 	}

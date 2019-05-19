@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
+import com.pbkkaddm.entity.User;
 import com.pbkkaddm.service.PemasukanService;
 
 
@@ -64,6 +65,17 @@ public class PemasukanController {
 		
 		return "transaksi/nota";
 	}
+	
+	@GetMapping("/showFormForAddUser")
+	public String showFormForAddUser(Model theModel) {
+		
+		// create model attribute to bind form data
+		User user = new User();
+		
+		theModel.addAttribute("user", user);
+		
+		return "transaksi/user";
+	}
 	@PostMapping("/savePemasukan")
 	public String savePemasukan(@ModelAttribute("pemasukan") Pemasukan pemasukan) {
 		
@@ -80,6 +92,16 @@ public class PemasukanController {
 		
 		// save the customer using our service
 		pemasukanService.saveNota(nota);
+		
+		
+		return "redirect:showFormForAdd";
+	}
+	
+	@PostMapping("/saveUser")
+	public String saveUser(@ModelAttribute("user") User user) {
+		
+		// save the customer using our service
+		pemasukanService.saveUser(user);
 		
 		
 		return "redirect:showFormForAdd";

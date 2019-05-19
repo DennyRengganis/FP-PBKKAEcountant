@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.pbkkaddm.entity.Nota;
 import com.pbkkaddm.entity.Pemasukan;
+import com.pbkkaddm.entity.User;
 
 public interface PemasukanService {
 	public List<Pemasukan> getPemasukans();
@@ -13,5 +14,7 @@ public interface PemasukanService {
 
 	public void saveNota(Nota nota);
 	public Pemasukan getPemasukan(int pemasukanId);
+
+	public void saveUser(User user);
 	
 }
