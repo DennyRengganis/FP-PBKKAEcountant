@@ -169,7 +169,7 @@
 					            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>Income</a>
 					        </li>
 					        <li class="nav-item">
-					            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Outcome</a>
+					            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" href="showFormForAddNota" role="tab"  aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Outcome</a>
 					        </li>
 					       
 					    </ul>
@@ -220,58 +220,7 @@
 					           
 					                
 								</div>
-					            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-					               	<%-- <form:form action="savePengeluaran" modelAttribute="pengeluarn" method="POST"> --%>
-					               	<form role="form">
-										<div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-												</div>
-						                    	
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
-												</div>
-						                    	
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                  	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    
-						                  	</div>
-						               	</div>
-						                <div class="form-group">
-						                	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                  	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	
-						                  	</div>
-						               	</div>
-						               
-						                <div class="text-center">
-						                  	<!-- <button type="button" class="btn btn-primary mt-4" href="">Submit</button> -->
-						                  	<td><label></label></td>
-											<td><input type="submit" value="Save" class="save" /></td>
-						                </div>
-						          </form>
-					              <%-- </form:form> --%>
-					            </div> 
+					            
 					        </div>
 					    </div>
 					</div>
