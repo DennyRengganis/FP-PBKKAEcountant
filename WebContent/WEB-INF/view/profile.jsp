@@ -164,116 +164,102 @@
 	    <!-- Page content -->
 	    <div class="container-fluid mt--7">
 	  		 <div class="row">
-		        <div class="col">
-		         
-		            <div class="nav-wrapper">
-					    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
-					        <li class="nav-item">
-					            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>Income</a>
-					        </li>
-					        <li class="nav-item">
-					            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Outcome</a>
-					        </li>
-					       
-					    </ul>
-					</div>
-					<div class="card shadow">
-						<div class="card-body">
-					    	<div class="tab-content" id="myTabContent">
-					        	<div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-					           		<form role="form">
-										<div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-												</div>
-						                    	<input class="form-control" placeholder="Sumber Pemasukan" type="text">
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
-												</div>
-						                    	<input class="form-control" placeholder="Tanggal" type="text">
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	<input class="form-control" placeholder="Total Pemasukan" type="number">
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                  	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	<input class="form-control" placeholder="Catatan Tambahan" type="text">
-						                  	</div>
-						               	</div>
-						               
-						                <div class="text-center">
-						                  	<button type="button" class="btn btn-primary mt-4" href="">Submit</button>
-						                </div>
-					              </form>
-					                
-								</div>
-					            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-					                <form role="form">
-										<div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-												</div>
-						                    	<input class="form-control" placeholder="Keperluan pengeluaran" type="text">
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-											<div class="input-group input-group-alternative mb-3">
-												<div class="input-group-prepend">
-													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
-												</div>
-						                    	<input class="form-control" placeholder="Tanggal" type="text">
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                  	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	<input class="form-control" placeholder="Nama Barang" type="text">
-						                  	</div>
-						               	</div>
-						                <div class="form-group">
-						                	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	<input class="form-control" placeholder="Total Pengeluaran" type="number">
-						                  	</div>
-						                </div>
-						                <div class="form-group">
-						                  	<div class="input-group input-group-alternative">
-						                    	<div class="input-group-prepend">
-						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-						                    	</div>
-						                    	<input class="form-control" placeholder="Catatan Tambahan" type="text">
-						                  	</div>
-						               	</div>
-						               
-						                <div class="text-center">
-						                  	<button type="button" class="btn btn-primary mt-4" href="">Submit</button>
-						                </div>
-					              </form>
-					            </div> 
-					        </div>
-					    </div>
-					</div>
-		        </div>
-			</div>
+        <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+          <div class="card card-profile shadow">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img src="<c:url value="/resources/img/theme/PBKKA.jpg"/>" class="rounded-circle">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex justify-content-between">
+              
+              </div>
+            </div>
+            <div class="card-body pt-0 pt-md-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                    <div>
+                      <span class="heading">22</span>
+                      <span class="description">Add Transaction</span>
+                    </div>
+                    <div>
+                      <span class="heading">89</span>
+                      <span class="description">Review</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h3>
+                  PBKK A<span class="font-weight-light">, 27</span>
+                </h3>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Surabaya,Indonesia.
+                </div>
+      
+                <div>
+                  <i class="ni education_hat mr-2"></i>Sepuluh Nopember Institute of Technology
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">My account</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">User information</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-username">Username</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="PBKKA">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Email address</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="PBKKA@mhs.if.its.ac.id">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-first-name">First name</label>
+                        <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="PBKK">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-last-name">Last name</label>
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="A">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4" />
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       
 			<!-- Footer -->

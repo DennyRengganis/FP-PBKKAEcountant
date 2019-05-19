@@ -111,7 +111,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary mt-4">Create account</button>
+                  <button type="button" class="btn btn-primary mt-4" href="">Create account</button>
                 </div>
               </form>
             </div>

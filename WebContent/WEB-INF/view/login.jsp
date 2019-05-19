@@ -98,8 +98,8 @@
                     <span class="text-muted">Remember me</span>
                   </label>
                 </div>
-                <div class="text-center">
-                  <button type="button" class="btn btn-primary my-4">Sign in</button>
+                <div class="text-center" href="register">
+                  <button type="button" class="btn btn-primary my-4" >Sign in</button>
                 </div>
               </form>
             </div>
