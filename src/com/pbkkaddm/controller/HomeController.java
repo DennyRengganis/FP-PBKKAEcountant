@@ -26,6 +26,11 @@ public class HomeController {
 	public String transactionHistory() {
 		return "transactionHistory";
 	}
+	
+	@RequestMapping("/profile")
+	public String profile() {
+		return "profile";
+	}
 
 	
 }
