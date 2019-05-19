@@ -31,22 +31,22 @@
 			<table>
 				<tbody>
 					<tr>
-						<td><label>First name:</label></td>
+						<td><label>Tanggal:</label></td>
 						<td><form:input path="tanggal" /></td>
 					</tr>
 				
 					<tr>
-						<td><label>Last name:</label></td>
+						<td><label>Total:</label></td>
 						<td><form:input path="total" /></td>
 					</tr>
 
 					<tr>
-						<td><label>Email:</label></td>
+						<td><label>Dari:</label></td>
 						<td><form:input path="dari" /></td>
 					</tr>
 					
 						<tr>
-						<td><label>Email:</label></td>
+						<td><label>Catatan:</label></td>
 						<td><form:input path="catatan" /></td>
 					</tr>
 
