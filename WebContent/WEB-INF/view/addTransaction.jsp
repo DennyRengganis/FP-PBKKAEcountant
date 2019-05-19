@@ -181,8 +181,46 @@
 					    <div class="card-body">
 					        <div class="tab-content" id="myTabContent">
 					            <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-					                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-					                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.</p>
+					            	<form role="form">
+						                <div class="form-group">
+						                  <div class="input-group input-group-alternative mb-3">
+						                    <div class="input-group-prepend">
+						                      <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+						                    </div>
+						                    <input class="form-control" placeholder="Sumber Pemasukan" type="text">
+						                  </div>
+						                </div>
+						                <div class="form-group">
+						                  <div class="input-group input-group-alternative mb-3">
+						                    <div class="input-group-prepend">
+						                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+						                    </div>
+						                    <input class="form-control" placeholder="Tanggal" type="text">
+						                  </div>
+						                </div>
+						                <div class="form-group">
+						                  <div class="input-group input-group-alternative">
+						                    <div class="input-group-prepend">
+						                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+						                    </div>
+						                    <input class="form-control" placeholder="Total Pemasukan" type="number">
+						                  </div>
+						                </div>
+						                <div class="form-group">
+						                  <div class="input-group input-group-alternative">
+						                    <div class="input-group-prepend">
+						                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+						                    </div>
+						                    <input class="form-control" placeholder="Catatan Tambahan" type="text">
+						                  </div>
+						                </div>
+						               
+						            
+						                <div class="text-center">
+						                  <button type="button" class="btn btn-primary mt-4" href="">Submit</button>
+						                </div>
+						              </form>
+					                
 					            </div>
 					            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
 					                <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
