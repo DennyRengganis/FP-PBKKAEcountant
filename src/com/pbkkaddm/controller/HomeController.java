@@ -16,5 +16,10 @@ public class HomeController {
 	public String register() {
 		return "register";
 	}
+	
+	@RequestMapping("/addTransaction")
+	public String addTransaction() {
+		return "addTransaction";
+	}
 
 }
