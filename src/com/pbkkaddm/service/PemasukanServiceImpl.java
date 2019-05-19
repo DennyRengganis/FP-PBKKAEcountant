@@ -34,6 +34,13 @@ public class PemasukanServiceImpl implements PemasukanService {
 
 		pemasukanDAO.savePemasukan(pemasukan);
 	}
+	
+	@Override
+	@Transactional
+	public void saveNota(Nota nota) {
+
+		pemasukanDAO.saveNota(nota);
+	}
 
 
 }

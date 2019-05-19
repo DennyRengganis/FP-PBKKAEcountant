@@ -25,6 +25,7 @@ public class PemasukanController {
 	private PemasukanService pemasukanService;
 	
 	
+	
 	@GetMapping("list")
 	public String list(Model model) {
 		
@@ -52,6 +53,16 @@ public class PemasukanController {
 		return "transaksi/customer-form";
 	}
 	
+	@GetMapping("/showFormForAddNota")
+	public String showFormForAddNota(Model theModel) {
+		
+		// create model attribute to bind form data
+		Nota nota = new Nota();
+		
+		theModel.addAttribute("nota", nota);
+		
+		return "transaksi/customer-form";
+	}
 	@PostMapping("/savePemasukan")
 	public String savePemasukan(@ModelAttribute("pemasukan") Pemasukan pemasukan) {
 		
@@ -61,6 +72,18 @@ public class PemasukanController {
 		
 		return "redirect:showFormForAdd";
 	}
+	
+	
+	@PostMapping("/saveNota")
+	public String saveNota(@ModelAttribute("nota") Nota nota) {
+		
+		// save the customer using our service
+		pemasukanService.saveNota(nota);
+		
+		
+		return "redirect:showFormForAdd";
+	}
+	
 	
 	@GetMapping("/pembukuan")
 	public String jumlahSemua(Model model) {
