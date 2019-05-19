@@ -44,6 +44,11 @@
 						<td><label>Email:</label></td>
 						<td><form:input path="dari" /></td>
 					</tr>
+					
+						<tr>
+						<td><label>Email:</label></td>
+						<td><form:input path="catatan" /></td>
+					</tr>
 
 					<tr>
 						<td><label></label></td>

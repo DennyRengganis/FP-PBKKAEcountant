@@ -17,7 +17,10 @@ public class HomeController {
 		return "register";
 	}
 	
-	
+	@RequestMapping("/addTransaction")
+	public String addTransaction() {
+		return "transaksi/customer-form";
+	}
 
 	
 }
