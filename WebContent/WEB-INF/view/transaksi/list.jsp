@@ -18,7 +18,10 @@
 	</c:forEach>
 	
 	<c:forEach var="nota" items="${notas}">
-		${nota} <br/>
+			<c:url var="updateLink2" value="/transaksi/showFormForUpdateNota">
+			<c:param name="notaId" value="${nota.nid }" />
+		</c:url>
+		<div>${nota} <a href="${updateLink2 }">Update</a> </div> <br/>
 	</c:forEach>
 </body>
 </html>
