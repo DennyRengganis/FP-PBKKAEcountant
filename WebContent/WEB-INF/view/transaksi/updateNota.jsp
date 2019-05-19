@@ -150,7 +150,7 @@
 	      <div class="container-fluid d-flex align-items-center">
 	        <div class="row">
 	          <div class="col">
-	            <h1 class="display-2 text-white">Update Income</h1>
+	            <h1 class="display-2 text-white">Update Outcome</h1>
 	            <p class="text-white mt-0 mb-5">This is input data page. You can add income and outcome for your company</p>
 	          </div>
         	</div>
@@ -166,7 +166,7 @@
 		            <div class="nav-wrapper">
 					    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
 					        <li class="nav-item">
-					            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>Income</a>
+					            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab"  aria-controls="tabs-icons-text-2" aria-selected="true"><i class="ni ni-bell-55 mr-2"></i>Outcome</a>
 					        </li>
 					       
 					    </ul>
@@ -174,16 +174,15 @@
 					<div class="card shadow">
 						<div class="card-body">
 					    	<div class="tab-content" id="myTabContent">
-					        	<div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+					        	<div class="tab-pane fade show active" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
 					           		
-					           		<form:form action="updatePemasukan" modelAttribute="pemasukan" method="POST">
-					           		<form:hidden path="id"/>
+					           		<form:form action="saveNota" modelAttribute="nota" method="POST">
 										<div class="form-group">
 											<div class="input-group input-group-alternative mb-3">
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-hat-3"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Tanggal pemasukan" path="tanggal" />
+						                    	<form:input class="form-control" placeholder="Tanggal pengeluaran" path="ntanggal" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -191,7 +190,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Total pengeluaran" path="total" />
+						                    	<form:input class="form-control" placeholder="Nama Barang" path="nnama" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -199,7 +198,7 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input class="form-control" placeholder="Sumber Pemasukan" path="dari" />
+						                    	<form:input class="form-control" placeholder="Harga Barang" path="nharga" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">
@@ -207,7 +206,16 @@
 						                    	<div class="input-group-prepend">
 						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 						                    	</div>
-						                    	<form:input class="form-control" placeholder="Keterangan Pemasukan" path="catatan" />
+						                    	<form:input class="form-control" placeholder="Keperluan pengeluaran" path="nkeperluan" />
+						                  	</div>
+						               	</div>
+						               	
+						               	<div class="form-group">
+						                  	<div class="input-group input-group-alternative">
+						                    	<div class="input-group-prepend">
+						                      		<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+						                    	</div>
+						                    	<form:input class="form-control" placeholder="Catatan Tambahan" path="ncatatan" />
 						                  	</div>
 						               	</div>
 						               
