@@ -175,7 +175,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 												</div>
-						                    	<form:input class="form-control" placeholder="Total pengeluaran" path="total" />
+						                    	<form:input class="form-control" placeholder="Total pemasukan" path="total" />
 						                  	</div>
 						                </div>
 						                <div class="form-group">

@@ -31,6 +31,11 @@ public class HomeController {
 	public String profile() {
 		return "profile";
 	}
+	
+	@RequestMapping("/bookeeping")
+	public String bookeeping() {
+		return "bookeeping";
+	}
 
 	
 }
