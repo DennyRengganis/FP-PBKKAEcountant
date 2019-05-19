@@ -69,7 +69,7 @@
             			</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/showFormForAdd">
               				<i class="ni ni-planet text-blue"></i> Add Transaction
             			</a>
           			</li>
@@ -79,7 +79,7 @@
             			</a>
 					</li>
 					<li class="nav-item">
-            			<a class="nav-link" href="/E-COUNTANT/userprofile">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/profile">
               				<i class="ni ni-single-02 text-yellow"></i> User profile
             			</a>
           			</li>
@@ -110,7 +110,7 @@
 					<a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               		<div class="media align-items-center">
                 		<span class="avatar avatar-sm rounded-circle">
-                  			<img alt="Image placeholder" src="<c:url value="/resources/img/theme/PBKKA.jpg"/>">
+                  			<img alt="Image placeholder" src="${pageContext.request.contextPath}/resources/img/theme/PBKKA.jpg">
                 		</span>
                 		<div class="media-body ml-2 d-none d-lg-block">
                   			<span class="mb-0 text-sm  font-weight-bold">PBKK A</span>
@@ -121,17 +121,9 @@
               			<div class=" dropdown-header noti-title">
                 			<h6 class="text-overflow m-0">Welcome!</h6>
               			</div>
-              			<a href="#" class="dropdown-item">
+              			<a href="${pageContext.request.contextPath}/profile" class="dropdown-item">
                 			<i class="ni ni-single-02"></i>
                				<span>My profile</span>
-              			</a>
-              			<a href="#" class="dropdown-item">
-                			<i class="ni ni-settings-gear-65"></i>
-                			<span>Settings</span>
-              			</a>
-              			<a href="#" class="dropdown-item">
-                			<i class="ni ni-calendar-grid-58"></i>
-                			<span>Activity</span>
               			</a>
               			<a href="#" class="dropdown-item">
                 			<i class="ni ni-support-16"></i>
@@ -153,9 +145,9 @@
 	      <div class="container-fluid d-flex align-items-center">
 	        <div class="row">
 	          <div class="col">
-	            <h1 class="display-2 text-white">Add Transaction</h1>
-	            <p class="text-white mt-0 mb-5">This is input data page. You can add income and outcome for your company</p>
-	          </div>
+	          	<h1 class="display-2 text-white">Hello</h1>
+            	<p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+	            </div>
         	</div>
      		</div>
 	    </div>
@@ -267,7 +259,7 @@
 				<div class="container">
 					<div class="col-xl-6">
 						<div class="copyright text-center text-xl-left text-muted">
-							<a href="#" class="font-weight-bold ml-1" target="_blank">  </a>
+							<a  class="font-weight-bold ml-1" target="_blank">  </a>
 						</div>
 					</div>
 			  	</div>
@@ -276,16 +268,16 @@
 			    	<div class="row align-items-center justify-content-xl-between">
 			        	<div class="col-xl-6">
 			          		<div class="copyright text-center text-xl-left text-muted">
-			           			 &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Informatics-C20</a>
+			           			 &copy; 2019 <a  class="font-weight-bold ml-1" target="_blank">Informatics-C20</a>
 			          		</div>
 			        	</div>
 				        <div class="col-xl-6">
 				          	<ul class="nav nav-footer justify-content-center justify-content-xl-end">
 				            	<li class="nav-item">
-				              		<a href="#" class="nav-link" target="_blank">About Us</a>
+				              		<a  class="nav-link" target="_blank">About Us</a>
 				            	</li>
 				            	<li class="nav-item">
-				              		<a href="#" class="nav-link" target="_blank">Blog</a>
+				              		<a  class="nav-link" target="_blank">Blog</a>
 				            	</li>
 				          	</ul>
 				        </div>
