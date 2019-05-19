@@ -1,80 +1,158 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>Save Customer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link type="text/css"
-		  rel="stylesheet"
-		  href="${pageContext.request.contextPath}/resources/css/style.css">
-
-	<link type="text/css"
-		  rel="stylesheet"
-		  href="${pageContext.request.contextPath}/resources/css/add-customer-style.css">
+  <title>Register</title>
+  
+   <link
+	rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/css/argon.css">
+  
 </head>
 
-<body>
-	
-	<div id="wrapper">
-		<div id="header">
-			<h2>CRM - Customer Relationship Manager</h2>
-		</div>
-	</div>
-
-	<div id="container">
-		<h3>Save Customer</h3>
-	
-		<form:form action="saveUser" modelAttribute="user" method="POST">
-		
-			<table>
-				<tbody>
-					<tr>
-						<td><label>Username:</label></td>
-						<td><form:input path="username" /></td>
-					</tr>
-				
-					<tr>
-						<td><label>Last name:</label></td>
-						<td><form:input path="password" /></td>
-					</tr>
-
-					<tr>
-						<td><label>Email:</label></td>
-						<td><form:input path="email" /></td>
-					</tr>
-
-					<tr>
-						<td><label></label></td>
-						<td><input type="submit" value="Save" class="save" /></td>
-					</tr>
-
-				
-				</tbody>
-			</table>
-		
-		
-		</form:form>
-	
-		<div style="clear; both;"></div>
-		
-		<p>
-			<a href="${pageContext.request.contextPath}/customer/list">Back to List</a>
-		</p>
-	
-	</div>
-
+<body class="bg-default">
+  <div class="main-content">
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+      <div class="container px-4">
+        
+        <a class="navbar-brand" href="#">     
+        	<img src="${pageContext.request.contextPath}/resources/img/brand/white.png" />  
+           </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        
+        
+          <!-- Navbar items -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon">
+                <i class="ni ni-circle-08"></i> 
+                <span class="nav-link-inner--text">Register</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="">
+                <i class="fas fa-key"></i> 
+                <span class="nav-link-inner--text">Login</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    
+    
+    <!-- Header -->
+    <div class="header d py-7 py-lg-8">
+      <div class="container">
+        <div class="header-body text-center mb-7">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6">
+              <h1 class="text-white">Welcome!</h1>
+              <p class="text-lead text-light">Please Register first to make account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <!-- Table -->
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="card bg-secondary shadow border-0">
+            <div class="card-body px-lg-5 py-lg-5">
+              <div class="text-center text-muted mb-4">
+                <small>sign up</small>
+              </div>
+              
+              <form:form action="saveUser" modelAttribute="user" method="POST">
+              
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                    </div>
+                    <form:input class="form-control" placeholder="Name" path="username" />
+                   <!--  <form:input class="form-control" path="username" placeholder="Name" type="text" /> -->
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+      
+      				<form:input class="form-control" placeholder="Email" path="email" type="email"/>
+                   <!--  <form:input class="form-control" path="email" placeholder="Email" type="email" /> -->
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <form:input class="form-control" placeholder="Password" path="password" type="password" />
+                   <!--  <form:input class="form-control" path="password" placeholder="Password" type="password"/> -->
+                  </div>
+                </div>
+               
+                <div class="row my-4">
+                  <div class="col-12">
+                    <div class="custom-control custom-control-alternative custom-checkbox">
+                      <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                      <label class="custom-control-label" for="customCheckRegister">
+                        <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" value="Save" class="btn btn-primary mt-4">Create account</button>
+                </div>
+              
+             </form:form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-xl-between">
+        <div class="col-xl-6">
+          <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Informatics-C20</a>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+            <li class="nav-item">
+              <a href="#" class="nav-link" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" target="_blank">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+ 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-

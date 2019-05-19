@@ -74,13 +74,16 @@
               <div class="text-center text-muted mb-4">
                 <small>sign up</small>
               </div>
-              <form role="form">
+              
+              <form:form action="saveUser" modelAttribute="user" method="POST">
+              
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Name" type="text">
+                    <form:input class="form-control" placeholder="Name" path="username" />
+                   <!--  <form:input class="form-control" path="username" placeholder="Name" type="text" /> -->
                   </div>
                 </div>
                 <div class="form-group">
@@ -88,7 +91,9 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Email" type="email">
+      
+      				<form:input class="form-control" placeholder="Email" path="email" />
+                   <!--  <form:input class="form-control" path="email" placeholder="Email" type="email" /> -->
                   </div>
                 </div>
                 <div class="form-group">
@@ -96,7 +101,8 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Password" type="password">
+                    <form:input class="form-control" placeholder="Password" path="password" />
+                   <!--  <form:input class="form-control" path="password" placeholder="Password" type="password"/> -->
                   </div>
                 </div>
                
@@ -111,9 +117,10 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary mt-4" href="">Create account</button>
+                  <button type="submit" value="Save" class="btn btn-primary mt-4">Create account</button>
                 </div>
-              </form>
+              
+             </form:form>
             </div>
           </div>
         </div>
