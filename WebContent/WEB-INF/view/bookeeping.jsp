@@ -145,7 +145,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Income Value</h5>
-                      <span class="h2 font-weight-bold mb-0">350,897</span>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah}</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
@@ -167,7 +167,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Expense Value</h5>
-                      <span class="h2 font-weight-bold mb-0">2,356</span>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah2}</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -189,7 +189,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Profit output</h5>
-                      <span class="h2 font-weight-bold mb-0">924</span>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah3}</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
@@ -232,44 +232,24 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col">Page name</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col">Unique users</th>
-                    <th scope="col">Bounce rate</th>
+                    <th scope="col">id</th>
+                    <th scope="col">tanggal</th>
+                    <th scope="col">total</th>
+                    <th scope="col">sumber</th>
+                    <th scope="col">catatan</th>
                   </tr>
                 </thead>
+                <c:forEach var="pemasukan" items="${pemasukans}">
                 <tbody>
                   <tr>
-                    <th scope="row"> /argon/ </th>
-                    <td>4,569</td>
-                    <td>340 </td>
-                    <td>46,53%</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"> /argon/index.html</th>
-                    <td>   3,985 </td>
-                    <td>319</td>
-                    <td>46,53%</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">/argon/charts.html </th>
-                    <td>3,513</td>
-                    <td>294</td>
-                    <td>36,49%</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">/argon/tables.html</th>
-                    <td>2,050</td>
-                    <td>147</td>
-                    <td>50,87%</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">/argon/profile.html</th>
-                    <td>1,795</td>
-                    <td>190</td>
-                    <td>46,53%</td>
+                    <th scope="row">${pemasukan.id} </th>
+                    <td>${pemasukan.tanggal}</td>
+                    <td>Rp ${pemasukan.total}</td>
+                    <td>${pemasukan.dari}</td>
+                    <td>${pemasukan.catatan}</td>
                   </tr>
                 </tbody>
+                </c:forEach>
               </table>
             </div>
           </div>
@@ -290,45 +270,26 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                  	<th scope="col-xl-2">Id</th>
-                    <th scope="col-xl-2">Tanggal</th>
-                    <th scope="col-xl-2">Total</th>
-                    <th scope="col-xl-2">Sumber</th>
-                    <th scope="col-xl-2">Catatan</th>
+                  	<th scope="col">Id</th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">Keperluan</th>
+                    <th scope="col">nama</th>
+                    <th scope="col">harga</th>
+                    <th scope="col">catatan</th>
                   </tr>
                 </thead>
+                <c:forEach var="nota" items="${notas}">
                 <tbody>
                   <tr>
-                    <th scope="col-xl-2">1aaaaaaaaaaaaaaa</th>
-                    <td scope="col-xl-2" >Mei</td>
-                    <td scope="col-xl-2">10000</td>
-                    <td scope="col-xl-2">Toko sumber makmur asdadasdasdasdsadasdasd adadasdsad adasdsadsad</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Mei</td>
-                    <td>20000</td>
-                    <td>Toko sumber waras</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Mei</td>
-                    <td>1000000</td>
-                    <td>Toko sumber makmur</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Mei</td>
-                    <td>20000</td>
-                    <td>Toko sumber waras</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Mei</td>
-                    <td>500000</td>
-                    <td>Toko sumber waras</td>
+                    <th scope="row">${nota.nid} </th>
+                    <td>${nota.ntanggal}</td>
+                    <td>${nota.nkeperluan}</td>
+                    <td>${nota.nnama}</td>
+                    <td>Rp ${nota.nharga}</td>
+                    <td>${nota.ncatatan}</td>
                   </tr>
                 </tbody>
+                </c:forEach>
               </table>
             </div>
           </div>

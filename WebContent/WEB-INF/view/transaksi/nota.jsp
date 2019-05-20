@@ -81,7 +81,7 @@
             			</a>
           			</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
               				<i class="ni ni-bullet-list-67 text-red"></i> Bookeeping
             			</a>
           			</li>
