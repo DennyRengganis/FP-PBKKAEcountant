@@ -26,15 +26,36 @@
 	<br>
 	Pengeluaran : ${jumlah2}
 	<br>
-	Keuntungan : ${jumlah3}
+	Keuntungan : ${jumlah3}<br />
+	<br />
+	<br />
+	Pemasukan : <br/>
 	<c:forEach var="pemasukan" items="${pemasukans}">
 		<div>${pemasukan}</div> <br/>
 	</c:forEach>
+	Pengeluaran : <br/>
 	<c:forEach var="nota" items="${notas}">
 		<div>${nota}</div> <br/>
 	</c:forEach>
+	<br/>
+	<br/>
+	Pengeluaran - Januari : <br/>
+	<c:forEach var="pemasukanJan" items="${pemasukansJan}">
+		<div>${pemasukanJan}</div> <br/>
+	</c:forEach>
+	Pemasukan - Januari :<br/>
 	<c:forEach var="notaJan" items="${notasJan}">
 		<div>${notaJan}</div> <br/>
+	</c:forEach>
+	<br/>
+	<br/>
+	Pemasukan - Februari : <br/>
+	<c:forEach var="pemasukanFeb" items="${pemasukansFeb}">
+		<div>${pemasukanFeb}</div> <br/>
+	</c:forEach>
+	Pengeluaran - Februari : <br />
+	<c:forEach var="notaFeb" items="${notasFeb}">
+		<div>${notaFeb}</div> <br/>
 	</c:forEach>
 
 </body>

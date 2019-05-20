@@ -147,8 +147,47 @@ public class PemasukanDAOImpl implements PemasukanDAO {
 		Query<Nota> theQuery = currentSession.createQuery("from Nota where ntanggal=:notaId");
 		theQuery.setParameter("notaId","Januari");
 		
-		List<Nota> notas = theQuery.getResultList();
+		List<Nota> notasJan = theQuery.getResultList();
 		
-		return notas;
+		return notasJan;
+	}
+	@Override
+	public List<Pemasukan> getPemasukansJan() {
+		// Get Session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// Query
+		Query<Pemasukan> theQuery1 = currentSession.createQuery("from Pemasukan where tanggal=:pemasukanId");
+		theQuery1.setParameter("pemasukanId","Januari");
+		
+		List<Pemasukan> pemasukansJan = theQuery1.getResultList();
+		
+		return pemasukansJan;
+	}
+	@Override
+	public List<Pemasukan> getPemasukansFeb() {
+		// Get Session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// Query
+		Query<Pemasukan> theQuery1 = currentSession.createQuery("from Pemasukan where tanggal=:pemasukanId");
+		theQuery1.setParameter("pemasukanId","Februari");
+		
+		List<Pemasukan> pemasukansFeb = theQuery1.getResultList();
+		
+		return pemasukansFeb;
+	}
+	@Override
+	public List<Nota> getNotasFeb() {
+		// Get Session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// Query
+		Query<Nota> theQuery = currentSession.createQuery("from Nota where ntanggal=:notaId");
+		theQuery.setParameter("notaId","Februari");
+		
+		List<Nota> notasFeb = theQuery.getResultList();
+		
+		return notasFeb;
 	}
 }

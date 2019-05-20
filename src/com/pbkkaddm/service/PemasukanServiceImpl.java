@@ -96,6 +96,25 @@ public class PemasukanServiceImpl implements PemasukanService {
 		return pemasukanDAO.getNotasJan();
 	}
 
+	@Override
+	@Transactional
+	public List<Pemasukan> getPemasukansJan() {
+		
+		return pemasukanDAO.getPemasukansJan();
+	}
+
+	@Override
+	@Transactional
+	public List<Pemasukan> getPemasukansFeb() {
+		return pemasukanDAO.getPemasukansFeb();
+	}
+
+	@Override
+	@Transactional
+	public List<Nota> getNotasFeb() {
+		return pemasukanDAO.getNotasFeb();
+	}
+
 
 	
 }
