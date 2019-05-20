@@ -84,9 +84,18 @@ public class PemasukanServiceImpl implements PemasukanService {
 	}
 
 	@Override
+	@Transactional
 	public void deleteNota(int theId) {
 		// TODO Auto-generated method stub
 		pemasukanDAO.deleteNota(theId);
 	}
+
+	@Override
+	@Transactional
+	public List<Nota> getNotasJan() {
+		return pemasukanDAO.getNotasJan();
+	}
+
+
 	
 }

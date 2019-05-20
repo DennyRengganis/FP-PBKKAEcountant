@@ -24,5 +24,7 @@ public interface PemasukanService {
 	public void deletePemasukan(int theId);
 
 	public void deleteNota(int theId);
+
+	public List<Nota> getNotasJan();
 	
 }

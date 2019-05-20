@@ -20,5 +20,8 @@
 	<c:forEach var="nota" items="${notas}">
 		<div>${nota}</div> <br/>
 	</c:forEach>
+	<c:forEach var="notaJan" items="${notasJan}">
+		<div>${notaJan}</div> <br/>
+	</c:forEach>
 </body>
 </html>

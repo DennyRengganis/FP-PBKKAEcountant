@@ -27,5 +27,7 @@ public interface PemasukanDAO {
 	public void deletePemasukan(int theId);
 
 	public void deleteNota(int theId);
+
+	public List<Nota> getNotasJan();
 	
 }

@@ -138,4 +138,17 @@ public class PemasukanDAOImpl implements PemasukanDAO {
 		theQuery.setParameter("notaId",theId);
 		theQuery.executeUpdate();
 	}
+	@Override
+	public List<Nota> getNotasJan() {
+		// Get Session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// Query
+		Query<Nota> theQuery = currentSession.createQuery("from Nota where ntanggal=:notaId");
+		theQuery.setParameter("notaId","Januari");
+		
+		List<Nota> notas = theQuery.getResultList();
+		
+		return notas;
+	}
 }

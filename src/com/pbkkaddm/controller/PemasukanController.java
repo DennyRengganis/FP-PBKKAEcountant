@@ -112,6 +112,8 @@ public class PemasukanController {
 	public String jumlahSemua(Model model) {
 		List<Pemasukan> pemasukans = pemasukanService.getPemasukans();
 		List<Nota> notas = pemasukanService.getNotas();
+		List<Nota> notasJan = pemasukanService.getNotasJan();
+		
 		int jumlah=0;
 		int jumlah2=0;
 		int jumlah3;
@@ -129,6 +131,7 @@ public class PemasukanController {
 		model.addAttribute("jumlah3",jumlah3);
 		model.addAttribute("pemasukans", pemasukans);
 		model.addAttribute("notas", notas);
+		model.addAttribute("notasJan",notasJan);
 		return "transaksi/pembukuan";
 	}
 	
