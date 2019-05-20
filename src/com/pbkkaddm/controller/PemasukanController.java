@@ -120,6 +120,12 @@ public class PemasukanController {
 		int jumlah=0;
 		int jumlah2=0;
 		int jumlah3;
+		int jumlahPemJan=0;
+		int jumlahNotJan=0;
+		int jumlahPemFeb=0;
+		int jumlahNotFeb=0;
+		int jumlahJan;
+		int jumlahFeb;
 		for(Pemasukan i: pemasukans) {
 			int tmp=i.getTotal();
 			jumlah+=tmp;
@@ -128,6 +134,24 @@ public class PemasukanController {
 			int tmp2=j.getNharga();
 			jumlah2+=tmp2;
 		}
+		for(Pemasukan a: pemasukansJan ) {
+			int tmp3=a.getTotal();
+			jumlahPemJan+=tmp3;
+		}
+		for(Nota b: notasJan) {
+			int tmp4=b.getNharga();
+			jumlahNotJan+=tmp4;
+		}
+		for(Pemasukan c: pemasukansFeb) {
+			int tmp5=c.getTotal();
+			jumlahPemFeb+=tmp5;
+		}
+		for(Nota d: notasFeb) {
+			int tmp6=d.getNharga();
+			jumlahNotFeb+=tmp6;
+		}
+		jumlahJan=jumlahPemJan-jumlahNotJan;
+		jumlahFeb=jumlahPemFeb-jumlahNotFeb;
 		jumlah3=jumlah - jumlah2;
 		model.addAttribute("jumlah",jumlah);
 		model.addAttribute("jumlah2",jumlah2);
@@ -138,6 +162,13 @@ public class PemasukanController {
 		model.addAttribute("notasFeb",notasFeb);
 		model.addAttribute("pemasukansJan",pemasukansJan);
 		model.addAttribute("pemasukansFeb",pemasukansFeb);
+		model.addAttribute("jumlahJan", jumlahJan);
+		model.addAttribute("jumlahPemJan", jumlahPemJan);
+		model.addAttribute("jumlahPemFeb", jumlahPemFeb);
+		model.addAttribute("jumlahNotJan", jumlahNotJan);
+		model.addAttribute("jumlahNotFeb",jumlahNotFeb);
+		model.addAttribute("jumlahFeb",jumlahFeb);
+		
 		return "transaksi/pembukuan";
 	}
 	

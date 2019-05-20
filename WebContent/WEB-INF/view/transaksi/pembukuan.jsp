@@ -39,6 +39,13 @@
 	</c:forEach>
 	<br/>
 	<br/>
+	
+	Keuntungan Januari : ${jumlahJan}
+	
+	Pemasukan Januari : ${jumlahPemJan }
+	
+	Pengeluaran Januuari : ${jumlahNotJan }
+	
 	Pengeluaran - Januari : <br/>
 	<c:forEach var="pemasukanJan" items="${pemasukansJan}">
 		<div>${pemasukanJan}</div> <br/>
@@ -49,6 +56,13 @@
 	</c:forEach>
 	<br/>
 	<br/>
+	
+	Keuntungan Februari : ${jumlahFeb }
+	
+	Pemasukan Februari : ${jumlahPemFeb }
+	
+	Pengeluaran Februari : ${jumlahNotFeb }
+	
 	Pemasukan - Februari : <br/>
 	<c:forEach var="pemasukanFeb" items="${pemasukansFeb}">
 		<div>${pemasukanFeb}</div> <br/>
