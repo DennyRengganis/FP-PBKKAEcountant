@@ -115,7 +115,7 @@
                 			<span>Help</span>
               			</a>
               			<div class="dropdown-divider"></div>
-              			<a href="" class="dropdown-item">
+              			<a href="${pageContext.request.contextPath}/" class="dropdown-item">
                 			<i class="ni ni-user-run"></i>
                 			<span>Logout</span>
               			</a>
@@ -228,7 +228,7 @@
                 <thead class="thead-light">
                   <tr>
                     <th scope="col">id</th>
-                    <th scope="col">tanggal</th>
+                    <th scope="col">bulan</th>
                     <th scope="col">total</th>
                     <th scope="col">sumber</th>
                     <th scope="col">catatan</th>
@@ -266,8 +266,8 @@
                 <thead class="thead-light">
                   <tr>
                   	<th scope="col">Id</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Keperluan</th>
+                    <th scope="col">bulan</th>
+                    <th scope="col">keperluan</th>
                     <th scope="col">nama</th>
                     <th scope="col">harga</th>
                     <th scope="col">catatan</th>

@@ -125,7 +125,7 @@
                 			<span>Help</span>
               			</a>
               			<div class="dropdown-divider"></div>
-              			<a href="" class="dropdown-item">
+              			<a href="${pageContext.request.contextPath}/" class="dropdown-item">
                 			<i class="ni ni-user-run"></i>
                 			<span>Logout</span>
               			</a>
@@ -221,7 +221,7 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Email address</label>
-                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="PBKKA@mhs.if.its.ac.id">
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="dkamurapi@gmail.com">
                       </div>
                     </div>
                   </div>
