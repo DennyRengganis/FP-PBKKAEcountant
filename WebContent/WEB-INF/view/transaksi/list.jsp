@@ -54,8 +54,8 @@
 				<!-- Navigation -->
 				<ul class="navbar-nav">
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
-              				<i class="ni ni-tv-2 text-primary"></i> Dashboard
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
+              				<i class="ni ni-tv-2 text-primary"></i> Bookeeping
             			</a>
           			</li>
           			<li class="nav-item">
@@ -64,18 +64,13 @@
             			</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/list">
               				<i class="ni ni-pin-3 text-orange"></i> Transaction history
             			</a>
 					</li>
 					<li class="nav-item">
             			<a class="nav-link" href="${pageContext.request.contextPath}/profile">
               				<i class="ni ni-single-02 text-yellow"></i> User profile
-            			</a>
-          			</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-              				<i class="ni ni-bullet-list-67 text-red"></i> Bookeeping
             			</a>
           			</li>
         		</ul>
@@ -170,12 +165,12 @@
                   </tr>
                 </thead>
                 <c:forEach var="pemasukan" items="${pemasukans}">
-               <c:url var="updateLink" value="/transaksi/showFormForUpdate">
-               <c:param name="pemasukanId" value="${pemasukan.id}" />
-               </c:url>
-               <c:url var="deleteLink" value="/transaksi/deletePemasukan">
-               <c:param name="pemasukanId" value="${pemasukan.id}" />
-               </c:url>
+               	<c:url var="updateLink" value="/transaksi/showFormForUpdate">
+               		<c:param name="pemasukanId" value="${pemasukan.id}" />
+               	</c:url>
+               	<c:url var="deleteLink" value="/transaksi/deletePemasukan">
+               		<c:param name="pemasukanId" value="${pemasukan.id}" />
+               	</c:url>
                 <tbody>
                   <tr>
                     <th scope="row">${pemasukan.id} </th>
@@ -184,17 +179,13 @@
                     <td>${pemasukan.dari}</td>
                     <td>${pemasukan.catatan}</td>
                     <td>
-                    
-                   
+
                     <a href="${updateLink}"  class="btn btn-success btn-sm">Update</a>
                     <a href="${deleteLink}"  class="btn btn-danger btn-sm" onclick="if(!(confirm('Are you sure want to delete this income ?'))) return false">Delete</a>
-                    <%-- <button type="submit" class="btn btn-success btn-sm"  href="${pageContext.request.contextPath}/transaksi/showFormForUpdate">Update</button>
-                     <button type="submit" class="btn btn-success btn-sm"  href="${pageContext.request.contextPath}/transaksi/deletePemasukan">Delete</button> --%>
+                   
                     </td>
                   </tr>
                 </tbody>
-         <%-- </c:url>
-                </c:url> --%>
                 </c:forEach>
               </table>
             </div>
@@ -228,6 +219,12 @@
                   </tr>
                 </thead>
                 <c:forEach var="nota" items="${notas}">
+				  <c:url var="updateLink2" value="/transaksi/showFormForUpdateNota">
+				  	<c:param name="notaId" value="${nota.nid }" />
+				  </c:url>
+				  <c:url var="deleteLink2" value="/transaksi/deleteNota">
+					<c:param name="notaId" value="${nota.nid }" />
+				  </c:url>
                 <tbody>
                   <tr>
                     <th scope="row">${nota.nid} </th>
@@ -237,8 +234,11 @@
                     <td>Rp ${nota.nharga}</td>
                     <td>${nota.ncatatan}</td>
                     <td>
-                      <button type="submit" class="btn btn-success btn-sm">Update</button>
-                      <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                     
+                     <a href="${updateLink2}" class="btn btn-success btn-sm">Update</a>
+                     <a href="${deleteLink2}" class="btn btn-danger btn-sm"
+						onclick="if(!(confirm('Are you sure want to delete this income ?'))) return false">Delete</a>
+                     
                     </td>
                   </tr>
                 </tbody>

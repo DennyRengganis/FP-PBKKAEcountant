@@ -98,8 +98,9 @@
                     <span class="text-muted">Remember me</span>
                   </label>
                 </div>
-                <div class="text-center" href="register">
-                  <button type="button" class="btn btn-primary my-4" >Sign in</button>
+                <div class="text-center">
+                	<a href="${pageContext.request.contextPath}/transaksi/pembukuan"  class="btn btn-primary my-4">Sign In</a>
+                	
                 </div>
               </form>
             </div>

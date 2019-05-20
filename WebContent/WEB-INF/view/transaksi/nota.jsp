@@ -61,8 +61,8 @@
 				<!-- Navigation -->
 				<ul class="navbar-nav">
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
-              				<i class="ni ni-tv-2 text-primary"></i> Dashboard
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
+              				<i class="ni ni-tv-2 text-primary"></i> Bookeeping
             			</a>
           			</li>
           			<li class="nav-item">
@@ -71,18 +71,13 @@
             			</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/list">
               				<i class="ni ni-pin-3 text-orange"></i> Transaction history
             			</a>
 					</li>
 					<li class="nav-item">
             			<a class="nav-link" href="${pageContext.request.contextPath}/profile">
               				<i class="ni ni-single-02 text-yellow"></i> User profile
-            			</a>
-          			</li>
-					<li class="nav-item">
-						<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
-              				<i class="ni ni-bullet-list-67 text-red"></i> Bookeeping
             			</a>
           			</li>
         		</ul>
@@ -101,7 +96,8 @@
 			<!-- Brand -->
 			<a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="#">E-COUNTANT</a>
 			
-        	<ul class="navbar-nav align-items-center d-none d-md-flex">
+        	<!-- User -->
+			<ul class="navbar-nav align-items-center d-none d-md-flex">
 				<li class="nav-item dropdown">
 					<a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               		<div class="media align-items-center">

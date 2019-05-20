@@ -294,7 +294,288 @@
             </div>
           </div>
         </div>
+        </div>
+    
+    
+ 	  <!-- Card stats -->
+          
+          <div class="row mt-5">
+            <div class="col-xl-4 col-lg-8">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Income Value</h5>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah}</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fas fa-chart-bar"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-8">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Expense Value</h5>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah2}</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-chart-pie"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-8">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Profit output</h5>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah3}</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>     
+      
+      <div class="row mt-5">
+      
+      
+  		<!-- Pemasukan -->    
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Income Transaction per Januari</h3>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">total</th>
+                    <th scope="col">sumber</th>
+                    <th scope="col">catatan</th>
+                  </tr>
+                </thead>
+                <c:forEach var="pemasukan" items="${pemasukans}">
+                <tbody>
+                  <tr>
+                    <th scope="row">${pemasukan.id} </th>
+                    <td>Rp ${pemasukan.total}</td>
+                    <td>${pemasukan.dari}</td>
+                    <td>${pemasukan.catatan}</td>
+                  </tr>
+                </tbody>
+                </c:forEach>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pengeluaran -->  
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Expense Transaction per Januari</h3>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                  	<th scope="col">Id</th>
+                    <th scope="col">Keperluan</th>
+                    <th scope="col">nama</th>
+                    <th scope="col">harga</th>
+                    <th scope="col">catatan</th>
+                  </tr>
+                </thead>
+                <c:forEach var="nota" items="${notas}">
+                <tbody>
+                  <tr>
+                    <th scope="row">${nota.nid} </th>
+                    <td>${nota.nkeperluan}</td>
+                    <td>${nota.nnama}</td>
+                    <td>Rp ${nota.nharga}</td>
+                    <td>${nota.ncatatan}</td>
+                  </tr>
+                </tbody>
+                </c:forEach>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      
+       <!-- Card stats -->
+          
+          <div class="row mt-5">
+            <div class="col-xl-4 col-lg-8">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Income Value</h5>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah}</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fas fa-chart-bar"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-8">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Expense Value</h5>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah2}</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-chart-pie"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-8">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Profit output</h5>
+                      <span class="h2 font-weight-bold mb-0">Rp ${jumlah3}</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div> 
+      
+      <div class="row mt-5">
+      
+      
+  		<!-- Pemasukan -->    
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Income Transaction per Februari</h3>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">total</th>
+                    <th scope="col">sumber</th>
+                    <th scope="col">catatan</th>
+                  </tr>
+                </thead>
+                <c:forEach var="pemasukan" items="${pemasukans}">
+                <tbody>
+                  <tr>
+                    <th scope="row">${pemasukan.id} </th>
+                    <td>Rp ${pemasukan.total}</td>
+                    <td>${pemasukan.dari}</td>
+                    <td>${pemasukan.catatan}</td>
+                  </tr>
+                </tbody>
+                </c:forEach>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pengeluaran -->  
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">Expense Transaction per Februari</h3>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                  	<th scope="col">Id</th>
+                    <th scope="col">Keperluan</th>
+                    <th scope="col">nama</th>
+                    <th scope="col">harga</th>
+                    <th scope="col">catatan</th>
+                  </tr>
+                </thead>
+                <c:forEach var="nota" items="${notas}">
+                <tbody>
+                  <tr>
+                    <th scope="row">${nota.nid} </th>
+                    <td>${nota.nkeperluan}</td>
+                    <td>${nota.nnama}</td>
+                    <td>Rp ${nota.nharga}</td>
+                    <td>${nota.ncatatan}</td>
+                  </tr>
+                </tbody>
+                </c:forEach>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
       
       <!-- Footer -->
 			<footer class="py-5">

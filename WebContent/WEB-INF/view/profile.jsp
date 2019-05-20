@@ -64,8 +64,8 @@
 				<!-- Navigation -->
 				<ul class="navbar-nav">
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
-              				<i class="ni ni-tv-2 text-primary"></i> Dashboard
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
+              				<i class="ni ni-tv-2 text-primary"></i> Bookeeping
             			</a>
           			</li>
           			<li class="nav-item">
@@ -74,18 +74,13 @@
             			</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/list">
               				<i class="ni ni-pin-3 text-orange"></i> Transaction history
             			</a>
 					</li>
 					<li class="nav-item">
             			<a class="nav-link" href="${pageContext.request.contextPath}/profile">
               				<i class="ni ni-single-02 text-yellow"></i> User profile
-            			</a>
-          			</li>
-					<li class="nav-item">
-						<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
-              				<i class="ni ni-bullet-list-67 text-red"></i> Bookeeping
             			</a>
           			</li>
         		</ul>

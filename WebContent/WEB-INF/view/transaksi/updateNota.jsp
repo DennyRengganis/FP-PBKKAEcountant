@@ -61,28 +61,23 @@
 				<!-- Navigation -->
 				<ul class="navbar-nav">
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
-              				<i class="ni ni-tv-2 text-primary"></i> Dashboard
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/pembukuan">
+              				<i class="ni ni-tv-2 text-primary"></i> Bookeeping
             			</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/showFormForAdd">
               				<i class="ni ni-planet text-blue"></i> Add Transaction
             			</a>
           			</li>
           			<li class="nav-item">
-            			<a class="nav-link" href="#">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/transaksi/list">
               				<i class="ni ni-pin-3 text-orange"></i> Transaction history
             			</a>
 					</li>
 					<li class="nav-item">
-            			<a class="nav-link" href="/E-COUNTANT/userprofile">
+            			<a class="nav-link" href="${pageContext.request.contextPath}/profile">
               				<i class="ni ni-single-02 text-yellow"></i> User profile
-            			</a>
-          			</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-              				<i class="ni ni-bullet-list-67 text-red"></i> Bookeeping
             			</a>
           			</li>
         		</ul>
@@ -107,7 +102,7 @@
 					<a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               		<div class="media align-items-center">
                 		<span class="avatar avatar-sm rounded-circle">
-                  			<img alt="Image placeholder" src="<c:url value="/resources/img/theme/PBKKA.jpg"/>">
+                  			<img alt="Image placeholder" src="${pageContext.request.contextPath}/resources/img/theme/PBKKA.jpg">
                 		</span>
                 		<div class="media-body ml-2 d-none d-lg-block">
                   			<span class="mb-0 text-sm  font-weight-bold">PBKK A</span>
@@ -118,17 +113,9 @@
               			<div class=" dropdown-header noti-title">
                 			<h6 class="text-overflow m-0">Welcome!</h6>
               			</div>
-              			<a href="#" class="dropdown-item">
+              			<a href="${pageContext.request.contextPath}/profile" class="dropdown-item">
                 			<i class="ni ni-single-02"></i>
                				<span>My profile</span>
-              			</a>
-              			<a href="#" class="dropdown-item">
-                			<i class="ni ni-settings-gear-65"></i>
-                			<span>Settings</span>
-              			</a>
-              			<a href="#" class="dropdown-item">
-                			<i class="ni ni-calendar-grid-58"></i>
-                			<span>Activity</span>
               			</a>
               			<a href="#" class="dropdown-item">
                 			<i class="ni ni-support-16"></i>
