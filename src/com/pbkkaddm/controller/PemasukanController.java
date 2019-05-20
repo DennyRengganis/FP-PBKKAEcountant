@@ -111,8 +111,11 @@ public class PemasukanController {
 	@GetMapping("/pembukuan")
 	public String jumlahSemua(Model model) {
 		List<Pemasukan> pemasukans = pemasukanService.getPemasukans();
+		List<Pemasukan> pemasukansJan = pemasukanService.getPemasukansJan();
+		List<Pemasukan> pemasukansFeb = pemasukanService.getPemasukansFeb();
 		List<Nota> notas = pemasukanService.getNotas();
 		List<Nota> notasJan = pemasukanService.getNotasJan();
+		List<Nota> notasFeb = pemasukanService.getNotasFeb();
 		
 		int jumlah=0;
 		int jumlah2=0;
@@ -132,6 +135,9 @@ public class PemasukanController {
 		model.addAttribute("pemasukans", pemasukans);
 		model.addAttribute("notas", notas);
 		model.addAttribute("notasJan",notasJan);
+		model.addAttribute("notasFeb",notasFeb);
+		model.addAttribute("pemasukansJan",pemasukansJan);
+		model.addAttribute("pemasukansFeb",pemasukansFeb);
 		return "transaksi/pembukuan";
 	}
 	
